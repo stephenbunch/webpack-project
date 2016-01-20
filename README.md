@@ -1,6 +1,6 @@
 # Webpack Project
 
-Simple Webpack Project setup without all the ridiculous frills that come with todays front-end stack
+Simple Webpack Project without all the ridiculous frills that come with todays front-end stack
 
 ## TODO
 
