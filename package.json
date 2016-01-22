@@ -1,7 +1,7 @@
 {
-  "name": "webpack-project",
-  "version": "1.0.0",
-  "description": "Simple Webpack Project setup without all the ridiculous frills that come with todays front-end stack",
+  "name": "moderndeveloper",
+  "version": "0.1.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf build",
@@ -29,6 +29,7 @@
     "eventsource-polyfill": "^0.9.6",
     "express": "^4.13.3",
     "html-webpack-plugin": "^2.6.5",
+    "redux-devtools": "^3.0.1",
     "rimraf": "^2.5.0",
     "webpack": "^1.12.11",
     "webpack-dev-middleware": "^1.4.0",
@@ -37,6 +38,9 @@
   },
   "dependencies": {
     "react": "^0.14.6",
-    "react-dom": "^0.14.6"
+    "react-dom": "^0.14.6",
+    "react-redux": "^4.0.6",
+    "redux": "^3.0.5",
+    "reselect": "^2.0.2"
   }
 }
