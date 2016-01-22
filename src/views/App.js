@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import Counter from '../atoms/Counter'
-import incrementCount from '../actions/incrementCount'
-import decrementCount from '../actions/decrementCount'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import Counter from '../atoms/Counter';
+import incrementCount from '../actions/incrementCount';
+import decrementCount from '../actions/decrementCount';
 
 let selector = (state) => {
   return {
@@ -22,4 +22,4 @@ class App extends Component {
   }
 }
 
-export default connect(selector)(App)
+export default connect(selector)(App);

@@ -1,4 +1,4 @@
-import { INCREMENT_COUNT } from '../actionTypes'
+import { INCREMENT_COUNT } from '../actionTypes';
 
 export default function() {
   return {
