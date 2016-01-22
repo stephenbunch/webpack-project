@@ -2,26 +2,26 @@ import React from 'react'
 import { connect } from 'react-redux'
 import select from '../select'
 import action from '../action'
-import incrementCounter from '../actions/incrementCounter'
-import decrementCounter from '../actions/decrementCounter'
+import incrementCount from '../actions/incrementCount'
+import decrementCount from '../actions/decrementCount'
 
 let Counter = (props) => {
-  let { incrementCounter, decrementCounter, binaryCount } = props;
+  let { incrementCount, decrementCount, count } = props;
   return (
     <div>
-      <button onClick={ decrementCounter }>-</button>
-      <span>{ binaryCount }</span>
-      <button onClick={ incrementCounter }>+</button>
+      <button onClick={ decrementCount }>-</button>
+      <span>{ count }</span>
+      <button onClick={ incrementCount }>+</button>
     </div>
   );
 };
 
 export default connect(
   select({
-    binaryCount: (state) => state.count.toString(2)
+    count: (state) => state.count
   }),
   action({
-    incrementCounter,
-    decrementCounter
+    incrementCount,
+    decrementCount
   })
 )(Counter)
