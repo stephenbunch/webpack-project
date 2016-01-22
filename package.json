@@ -1,5 +1,5 @@
 {
-  "name": "moderndeveloper",
+  "name": "webpack-project",
   "version": "0.1.0",
   "description": "Simple Webpack Project setup without all the ridiculous frills that come with todays front-end stack",
   "main": "index.js",
