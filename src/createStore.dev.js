@@ -1,5 +1,5 @@
 import { createStore, compose } from 'redux';
-import rootReducer from './state';
+import rootReducer from './reducers';
 import DevTools from './DevTools';
 import { persistState } from 'redux-devtools';
 
@@ -17,8 +17,8 @@ export default function(initialState) {
   const store = finalCreateStore(rootReducer, initialState);
 
   if (module.hot) {
-    module.hot.accept('./state', () => {
-      store.replaceReducer(require('./state').default);
+    module.hot.accept('./reducers', () => {
+      store.replaceReducer(require('./reducers').default);
     });
   }
 

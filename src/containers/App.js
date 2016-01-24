@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import Counter from '../atoms/Counter';
+import Counter from '../components/Counter';
 import incrementCount from '../actions/incrementCount';
 import decrementCount from '../actions/decrementCount';
 
